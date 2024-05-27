@@ -1,0 +1,255 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    background-color: #ECD444;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo aquí */
+    height: auto;
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 20px; /* Tamaño de letra de la botonera */
+}
+
+.nav-buttons li a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header-banner-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.header-banner {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.producto {
+    background: #ececec;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+/* Grid de promociones */
+.promociones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.promocion {
+    background: #ececec;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.promocion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.promocion h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.promocion button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.promocion button:hover {
+    background-color: #555;
+}
+
+/* Banner de talleres */
+.talleres-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.talleres-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Formulario de contacto */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    grid-column: span 2;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+fieldset {
+    grid-column: span 2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promociones-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .productos-grid,
+    .promociones-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
